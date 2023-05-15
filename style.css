@@ -1,0 +1,238 @@
+:root {
+  --purple: #e14594;
+  --purple-dark: #7045af;
+  --blue: #2b3595;
+  --blue-dark: #182952;
+  
+  --body-color: white;
+  --a-color: rgba(255, 255, 255, .83);
+  --a-color-hover: rgba(255, 255, 255, .83);
+  --header-bg-color: var(--blue);
+  --welcome-bg-color: var(--blue);
+}
+
+body, html {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1.618em;
+  color: var(--body-color, black);
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.618em 0;
+}
+.site-logo.text {
+  display: inline;
+  width: 10%;
+  font-size: 1.618em; 
+  font-weight: 800;
+  border-bottom: 4px solid;
+}
+
+nav ul {
+  display: flex;  
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 1em;
+}
+nav ul li a {
+  width: 100%;
+  color: var(--body-color);
+  border-bottom: 2px solid
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+section#welcome-section {
+  background: linear-gradient(45deg, var(--welcome-bg-color), var(--purple-dark));
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+section.full-width {
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+.hero-txt {
+  text-align: center;
+}
+.hero-txt > .title {
+  font-weight: 400;
+  font-size: 3.8em;
+  line-height: 1.618em;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .15em;   
+}
+
+.hero-txt > .subtitle {
+  font-size: 1.618em;
+  line-height: 1.618em;
+  opacity: .6;
+  letter-spacing: .5em;
+}
+.hero-txt > .btn {
+  display: block;
+  margin: 1.618em;
+  font-size: 1.2em;
+}
+.btn {
+  padding: 1.618em;
+  background: var(--purple);
+  border: 3px solid var(--purple-dark);
+  border-radius: 3em;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, .16);
+}
+.btn:hover {
+  border: 3px solid var(--purple-dark);
+  background: var(--purple-dark);
+  border-radius: 3em;  
+}
+a {
+  color: var(--a-color);
+}
+a:hover {
+  text-decoration: none;
+  color: var(--a-color-hover);
+}
+
+
+/* projects */
+#projects {
+  background: var(--blue-dark);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1.618em;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .15em;   
+}
+.full-width > .title {
+  border-bottom: 3px solid;
+}
+
+.project-list {
+  margin-top: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;;
+}
+.project-item {
+  list-style: none;
+  flex-basis: 25%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 1em 3em 1em;
+}
+.project-item a {
+  width: 100%;
+  height: auto;
+}
+figure.img-container {
+  margin: 0;
+  width: 100%;
+}
+figure > img {
+  max-width: 100%;
+  width: 100%;
+  height; auto;
+  border-radius: 10px; 
+}
+figure > figcaption {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.project-item > a > figure > .title, .project-item > .title {
+  font-size: 1em;
+  line-height: 1.618em;
+  font-weight: 200;
+  text-align: center;
+  margin: 1em 0;
+}
+.category-list {
+  display: flex;  
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.category-item {
+  list-style: none;
+  margin: 1em;
+  text-align: center;
+  line-height: 1em;  
+  background: var(--blue);
+  padding: 1em;
+  font-size: .618em;
+  border-radius: 1.618em;
+}
+
+
+
+/* contact */
+section#contact {
+  background: linear-gradient(360deg, var(--blue), var(--blue-dark));
+}
+.presence-list{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  margin-top: 1.618em;
+}
+.presence-item {
+  list-style: none;
+  margin: 0 1.618em;
+}
+
+footer {
+  background: var(--blue);
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: 
+}
+
+
+@media (max-width: 480px) {
+  .hero-txt {
+    padding: 1em;
+  }
+}
+
+#navbar {
+  position: fixed;
+  text-align: center;
+  top: 15px;
+  height: 100px;
+}
+/* to be used */
+.full-width {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 0;
+}
